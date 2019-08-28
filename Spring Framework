@@ -1,0 +1,84 @@
+------------------------Spring framework-----------------------------
+
+- O spring framework, surge como uma solução para facilitar o desenvolvimento web com javaEE. 
+Partindo desse principio o Spring conta com todas as funções necessárias para responder às 
+reivindicações via HTTP (Hypertext Transfer Protocol: protocolo de transferência de hipertexto). 
+Desse modo, esse dispositivo auxilia na divisão de responsabilidades durante o processamento das informações,
+o que transforma a preparação das respostas a serem fornecidas em algo mais simples.
+
+---------------------Padrão MVC ----------------------------------------
+
+- MVC 
+É nada mais que um padrão de arquitetura de software, separando sua aplicação em 3 camadas. 
+A camada de interação do usuário(view), a camada de manipulação dos dados(model) e a camada de controle(controller).
+
+- Controller  
+O responsável por receber todas as requisições do usuário. Seus métodos chamados actions são responsáveis por uma página,
+controlando qual model usar e qual view será mostrado ao usuário.
+
+- Model 
+Sempre que você pensar em manipulação de dados, pense em model. Ele é responsável pela leitura e escrita de dados, 
+e também de suas validações.
+
+- View 
+Simplismente a camada de interação com o usuário. Ela apenas faz a  exibição dos dados, sendo ela por meio de um html,
+jsp ou xml.
+
+
+--------------------------- Principais anotações do Spring --------------------------
+
+- @Configuration
+É uma annotation que indica que determinada classe possui métodos que expõe novos beans.
+
+-@Controller
+Associada com classes que possuem métodos que processam requests numa aplicação web.
+
+-@Repository
+Associada com classes que isolam o acesso aos dados da sua aplicação. Comumente associada a DAO’s.
+
+-@Service
+Associada com classes que representam os fluxos de negocio de uma aplicação. Por exemplo, um fluxo de finalização 
+de compra envolve atualizar manipular o carrinho, enviar email, processar pagamento etc. Este é o típico código que 
+temos dificuldade de saber onde vamos colocar, em geral ele pode ficar num Service.
+
+-@Component
+A annotation básica que indica que uma classe vai ser gerenciada pelo container do Spring. 
+Todas as annotations descritas acima são, na verdade, derivadas de @Component. A ideia é justamente passar mais semântica.
+
+-@ComponentScan
+Em geral você a usa em classes de configuração(@Configuration) indicando quais pacotes ou classes devem ser 
+scaneadas pelo Spring para que essa configuração funcione.
+
+-@Autowired
+Anotação utilizada para marcar o ponto de injeção na sua classe. Você pode colocar ela sobre atributos ou sobre 
+o seu construtor com argumentos.
+
+-@RequestMapping
+Geralmente utilizada em cima dos métodos de uma classe anotada com @Controller. Serve para você colocar
+os endereços da sua aplicação que, quando acessados por algum cliente, deverão ser direcionados para o determinado método.
+
+-@Transactional
+Em geral utilizada para indicar que um método deverá esta dentro de uma transação. 
+Afim de garantir todos os principios da ACID, em uma transação com o banco de dados.
+
+-@PathVariable 
+Utilizada qundo o valor de uma variavel é passada e capturada diretamente pela URL.
+
+------------------------------ Primeiros passas para criar uma aplicação --------------------------------
+
+-Criar projeto spring maven ou gradle 
+Para isso podemos utilizar diversos "facilitadores" disponibilizados na web, como por exemplo JbossForge, 
+ou Spring Initializer. Como também criar um projeto base maven diretamente pela IDE.
+
+-Adicionar as dependencias
+Uma vez criado o projeto precisamos importar as dependencias que serão necessarias para atingir
+os fins desejados pela nossa aplicação. Exemplo: JPA, SPRING WEB, MYSQL CONNECTOR.
+
+-Criar pacotes
+Após tudo configurado temos que criar os pacotes para separar cada camada do nosso MVC 
+afim de fazer o encapsulamento de todas as nossas classes em seus devidos pacotes. 
+Os pacotes padrões são: Controllers, Models, Daos. Além disso devemos criar a nossa pasta que irá conter as nossas VIEWS.
+
+-Seguindos esses passos já temos o nosso projeto base criado, a partir dele devemos criar todas as nossas 
+classe e view conforme o objetivo da aplicação que esta sendo desenvolvida. 
+---------------------------------------------------------------------------------------------------------
