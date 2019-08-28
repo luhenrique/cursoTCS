@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Loja Senai</title>
+<link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+	<h1 class="title">Produtos cadastrados</h1>
+				<table id="playlistTable">
+				 
+				  <thead>
+				    <tr>
+				      <th >ID Produto</th>
+				      <th >Nome</th>
+				      <th >Preço</th>
+				      <th >Criado</th>
+				      <th >Marca</th>
+				      <th>Opções</th>
+				    </tr>
+				  </thead>
+
+			  <tbody>
+            <tr th:each="product : ${listProducts}">
+            	<td th:text="${product.id}">Product ID</td>
+                <td th:text="${product.name}">Name</td>
+                <td th:text="${product.brand}">Brand</td>
+                <td th:text="${product.madein}">Made in</td>
+                <td th:text="${product.price}">Price</td>
+                <td>
+                	<a th:href="@{'/edit/' + ${product.id}}">Edit</a>
+                	&nbsp;&nbsp;&nbsp; 
+                	<a th:href="@{'/delete/' + ${product.id}}">Delete</a>
+                </td>
+            </tr>
+			  </tbody>
+			</table>
+<br> <br>
+
+
+<br> <br>
+<a href="new" >Cadastre um produto </a>
+<br>
+<a href="edit">Edite um produto</a>
+
+</body>
+</html>
