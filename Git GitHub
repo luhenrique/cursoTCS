@@ -1,0 +1,41 @@
+--------------------GIT--------------------------------
+-O Git é um sistema open-source de controle de versão utilizado pela grande maioria dos desenvolvedores atualmente. Com ele podemos criar todo histórico de alterações no código do nosso projeto e facilmente voltar para qualquer ponto para saber como o código estava naquela data.
+
+----------------- Principais comandos GIT -----------------
+
+-git init 
+Inicia a linha do tempo, criando um novo repositorio(O repositorio também pode ser criado diretamente pelo site do github).
+
+-git add 
+Adiciona ou atualiza mudanças para irem para a linha do tempo.
+
+-git commit 
+Adiciona um ponto na linha do tempo, sempre adicionamos uma mensagem, para que possamos saber do que se trata aquele commit.
+
+-git log 
+Visualiza os pontos na linha do tempo / commit
+
+-git status 
+Informa o estado das alterações do nosso projeto
+
+-git show 
+Apresenta determinado ponto na história / commit
+
+-git branch 
+Gerenciar novas linhas do tempo, utilizado para adicionar novas features no projeto, sem comprometer o projeto principal.
+
+-git checkout 
+manipula as linhas do tempo.
+
+-git merge 
+Unir as branch com a master.
+
+-git push 
+Envia alterações locais para o repositório remoto(exemplo gitHub, gitLab, souceTree)
+
+-git clone
+Clonar um projeto / repositório
+
+-git pull
+Puxa do repositório remoto com suas alterações.
+--------------------------------------------------------------------------------------

@@ -1,0 +1,26 @@
+------------Fundamentos da orientação a objetos---------------------
+
+-A unidade básica de programação em linguagens orientadas a objetos é a classe.
+-Classes definem atributos e métodos comuns a vários objetos
+-Todo objeto é uma instância de uma classe
+
+---------------- Nomenclatura THIS -----------------------------------
+
+-Dentro de um método, o objeto pode precisar de sua própria referência.
+-Em Java, a palavra reservada this significa essa referência ao próprio objeto.
+
+------------------Pilares do POO--------------------------------------
+
+-Abstração 
+A abstração consiste em um dos pontos mais importantes dentro de qualquer linguagem Orientada a Objetos. Como estamos lidando com uma representação de um objeto real, temos que imaginar o que esse objeto irá realizar dentro de nosso sistema. Sendo assim, o ato de abstrair é pegar um objeto real e transcrever suas principais caracteristicas e funções em atributos e métodos.
+
+-Encapsulamento 
+O encapsulamento é baseado em propriedades privadas, ligadas a métodos especiais chamados getters e setters, que irão retornar e setar o valor da propriedade, respectivamente. Essa atitude evita o acesso direto a propriedade do objeto, adicionando uma outra camada de segurança à aplicação.
+
+-Herança 
+O reuso de código é uma das grandes vantagens da programação orientada a objetos. Muito disso se dá por uma questão que é conhecida como herança. ara entendermos essa característica, vamos imaginar uma família: a criança, por exemplo, está herdando características de seus pais. Os pais, por sua vez, herdam algo dos avós, o que faz com que a criança também o faça, e assim sucessivamente. Na Poo, isso se aplica da mesma forma, sendo que quando uma classe é filha de outra, ela passa a possuir todos os metodos e atributos de sua classe mãe.
+
+-Polimorfismo
+ Outro ponto essencial na programação orientada a objetos é o chamado polimorfismo. Na natureza, vemos animais que são capazes de alterar sua forma conforme a necessidade, e é dessa ideia que vem o polimorfismo na orientação a objetos. Como sabemos, os objetos filhos herdam as características e ações de seus “ancestrais”. Entretanto, em alguns casos, é necessário que as ações para um mesmo método seja diferente. Em outras palavras, o polimorfismo consiste na alteração do funcionamento interno de um método herdado de uma classe mãe.
+
+--------------------------------------------------------------------------------------------------------
